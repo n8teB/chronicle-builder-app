@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    /* Modern writing app theme - warm, inspiring colors */
+    --background: 252 100% 99%;
+    --foreground: 225 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 225 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 225 15% 15%;
+
+    /* Rich purple-blue for primary actions */
+    --primary: 250 75% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft purple for secondary elements */
+    --secondary: 250 20% 96%;
+    --secondary-foreground: 250 50% 30%;
+
+    --muted: 250 20% 96%;
+    --muted-foreground: 225 15% 50%;
+
+    /* Warm accent for highlights */
+    --accent: 35 90% 85%;
+    --accent-foreground: 35 90% 25%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 250 20% 90%;
+    --input: 250 20% 95%;
+    --ring: 250 75% 60%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar with subtle gradient feel */
+    --sidebar-background: 250 30% 98%;
+    --sidebar-foreground: 225 15% 25%;
+    --sidebar-primary: 250 75% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 250 40% 95%;
+    --sidebar-accent-foreground: 250 50% 30%;
+    --sidebar-border: 250 20% 85%;
+    --sidebar-ring: 250 75% 60%;
+
+    /* Writing-specific colors */
+    --writing-bg: 252 100% 99%;
+    --writing-text: 225 15% 15%;
+    --chapter-accent: 250 50% 95%;
+    --note-accent: 35 50% 95%;
+  }
+
+  .dark {
+    /* Dark theme for writing - easy on the eyes */
+    --background: 225 20% 8%;
+    --foreground: 225 10% 92%;
+
+    --card: 225 20% 10%;
+    --card-foreground: 225 10% 92%;
+
+    --popover: 225 20% 10%;
+    --popover-foreground: 225 10% 92%;
+
+    --primary: 250 75% 65%;
+    --primary-foreground: 225 20% 8%;
+
+    --secondary: 225 20% 15%;
+    --secondary-foreground: 225 10% 85%;
+
+    --muted: 225 20% 15%;
+    --muted-foreground: 225 10% 65%;
+
+    --accent: 35 80% 70%;
+    --accent-foreground: 225 20% 8%;
+
+    --destructive: 0 70% 65%;
+    --destructive-foreground: 225 20% 8%;
+
+    --border: 225 20% 20%;
+    --input: 225 20% 15%;
+    --ring: 250 75% 65%;
+
+    --sidebar-background: 225 25% 6%;
+    --sidebar-foreground: 225 10% 85%;
+    --sidebar-primary: 250 75% 65%;
+    --sidebar-primary-foreground: 225 20% 8%;
+    --sidebar-accent: 225 20% 12%;
+    --sidebar-accent-foreground: 225 10% 85%;
+    --sidebar-border: 225 20% 18%;
+    --sidebar-ring: 250 75% 65%;
+
+    /* Dark writing colors */
+    --writing-bg: 225 20% 8%;
+    --writing-text: 225 10% 90%;
+    --chapter-accent: 225 20% 12%;
+    --note-accent: 35 30% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

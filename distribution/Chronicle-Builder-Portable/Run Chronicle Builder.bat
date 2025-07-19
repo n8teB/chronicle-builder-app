@@ -1,0 +1,3 @@
+@echo off
+echo Starting Chronicle Builder...
+start "" "Chronicle Builder.exe"
